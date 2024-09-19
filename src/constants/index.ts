@@ -149,7 +149,7 @@ export const projects = [
     githubLink: "https://github.com/janleven01/Furni",
     imgURL: "/furni.png",
     techStack: [
-      { name: "React", iconURL: "/icons/React.svg", className: "size-5 my-2" },
+      { name: "React", iconURL: "/icons/react.svg", className: "size-5 my-2" },
       {
         name: "Javascript",
         iconURL: "/icons/javascript.svg",
@@ -184,7 +184,7 @@ export const projects = [
     githubLink: "https://github.com/janleven01/Money-Tracker",
     imgURL: "/money-tracker.png",
     techStack: [
-      { name: "React", iconURL: "/icons/React.svg", className: "size-5 my-2" },
+      { name: "React", iconURL: "/icons/react.svg", className: "size-5 my-2" },
       {
         name: "Javascript",
         iconURL: "/icons/javascript.svg",
