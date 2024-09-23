@@ -70,7 +70,10 @@ const Nav = () => {
                     </DropdownMenuItem>
                   </Link>
                 ))}
-                <Link href="/" target="_blank">
+                <Link
+                  href="https://drive.google.com/file/d/1nYoWKmiAcp0IaeLtQksWyvQMWX2Aq1uL/view"
+                  target="_blank"
+                >
                   <DropdownMenuItem>
                     <FileTextIcon className="mr-3 size-4" />
                     <span>Resume</span>
