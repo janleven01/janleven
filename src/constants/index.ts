@@ -50,8 +50,9 @@ export const techStack = [
   },
   {
     id: 4,
-    name: "NextJS",
-    image: "/icons/nextjs.svg",
+    name: "Typescript",
+    image: "/icons/typescript-2.svg",
+    className: "bg-blue_typescript",
   },
   {
     id: 5,
@@ -60,19 +61,18 @@ export const techStack = [
   },
   {
     id: 6,
+    name: "NextJS",
+    image: "/icons/nextjs.svg",
+  },
+  {
+    id: 7,
     name: "Tailwind",
     image: "/icons/tailwind.svg",
   },
   {
-    id: 7,
-    name: "Appwrite",
-    image: "/icons/appwrite.svg",
-  },
-  {
     id: 8,
-    name: "Typescript",
-    image: "/icons/typescript-2.svg",
-    className: "bg-blue_typescript",
+    name: "NextAuth",
+    image: "/icons/nextauth.svg",
   },
   {
     id: 9,
@@ -81,8 +81,8 @@ export const techStack = [
   },
   {
     id: 10,
-    name: "NextAuth",
-    image: "/icons/nextauth.svg",
+    name: "Appwrite",
+    image: "/icons/appwrite.svg",
   },
 ]
 
