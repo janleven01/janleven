@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import { LampContainer } from "./ui/lamp";
-import { motion } from "framer-motion";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
-import { Button } from "./ui/button";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
+import { LampContainer } from "./ui/lamp"
+import { motion } from "framer-motion"
+import { TextGenerateEffect } from "./ui/text-generate-effect"
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect"
+import { Button } from "./ui/button"
+import { ArrowTopRightIcon } from "@radix-ui/react-icons"
+import Link from "next/link"
 
 const Hero = () => {
   const typeWriterWords = [
@@ -18,7 +18,7 @@ const Hero = () => {
     { text: "front-end" },
     { text: "Next.js" },
     { text: "Developer" },
-  ];
+  ]
 
   return (
     <section className="bg-grid-small-white/[0.1]">
@@ -37,8 +37,14 @@ const Hero = () => {
             <div className="text-foreground sm:leading-normal leading-tight">
               From concepts into
             </div>
-            <TextGenerateEffect words="Interactive Realities" textColor="dark:text-primary" />
-            <TypewriterEffectSmooth words={typeWriterWords} textSize="text-xs tracking-wide sm:text-base xl:text-lg" />
+            <TextGenerateEffect
+              words="Interactive Realities"
+              textColor="dark:text-primary"
+            />
+            <TypewriterEffectSmooth
+              words={typeWriterWords}
+              textSize="text-xs tracking-wide sm:text-base xl:text-lg"
+            />
             <motion.span
               initial={{
                 opacity: 0,
@@ -48,7 +54,7 @@ const Hero = () => {
               }}
               transition={{
                 delay: 3,
-                duration: 1.5
+                duration: 1.5,
               }}
             >
               <Link href="/portfolio" scroll>
@@ -56,7 +62,7 @@ const Hero = () => {
                   variant="outline"
                   className="text-foreground tracking-normal hover:bg-primary/80 hover:text-black max-sm:text-xs"
                 >
-                  View my work
+                  View my projects
                   <ArrowTopRightIcon className="ml-1" />
                 </Button>
               </Link>
@@ -65,7 +71,7 @@ const Hero = () => {
         </motion.h1>
       </LampContainer>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

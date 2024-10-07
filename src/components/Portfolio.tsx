@@ -1,23 +1,23 @@
-"use client";
+"use client"
 
-import { AnimatePresence, motion } from "framer-motion";
-import { FlipWords } from "./ui/flip-words";
-import { useEffect, useState } from "react";
-import PortfolioCard from "./ui/card-portfolio";
+import { AnimatePresence, motion } from "framer-motion"
+import { FlipWords } from "./ui/flip-words"
+import { useEffect, useState } from "react"
+import PortfolioCard from "./ui/card-portfolio"
 
 const Portfolio = () => {
-  const words = ["curiosity", "effort", "commitment", "best-practices"];
-  const [isVisible, setIsVisible] = useState(true);
+  const words = ["curiosity", "effort", "commitment", "best-practices"]
+  const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(false);
-    }, 4000);
+      setIsVisible(false)
+    }, 4000)
 
     return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+      clearTimeout(timer)
+    }
+  }, [])
 
   return (
     <section className="m-auto">
@@ -33,7 +33,7 @@ const Portfolio = () => {
       >
         <div className="mb-2">
           <h2 className="text-center sm:text-base text-sm">
-            Take a look at the projects I’ve brought to life.
+            Take a look at the projects I&apos;ve brought to life.
           </h2>
           <h1 className="text-center sm:text-5xl text-3xl font-semibold mt-3 w-full">
             Built with
@@ -49,7 +49,6 @@ const Portfolio = () => {
         </div>
 
         <PortfolioCard />
-        
       </motion.div>
       <AnimatePresence>
         {isVisible && (
@@ -79,7 +78,7 @@ const Portfolio = () => {
         )}
       </AnimatePresence>
     </section>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

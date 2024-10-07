@@ -142,6 +142,24 @@ export const projects = [
     ],
   },
   {
+    title: "SquareUp",
+    description:
+      "A Figma design converted into a fully functional front-end with pixel-perfect accuracy, reusable components, and a responsive web interface.",
+    vercelLink: "https://squareup-beige.vercel.app/",
+    githubLink: "https://github.com/janleven01/squareup",
+    figmaLink: "https://www.figma.com/community/file/1305400086109606332",
+    imgURL: "/squareup.png",
+    techStack: [
+      { name: "NextJs", iconURL: "/icons/nextjs.svg", className: "size-8" },
+      {
+        name: "Typescript",
+        iconURL: "/icons/typescript.svg",
+        className: "size-5",
+      },
+      { name: "Tailwind", iconURL: "/icons/tailwind.svg", className: "size-5" },
+    ],
+  },
+  {
     title: "Furni",
     description:
       "A luxury chairs e-commerce store streamlining the shopping experience with seamless add-to-cart functionality and a well-organized shop, cart, and checkout page.",

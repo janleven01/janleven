@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import { projects } from "@/constants";
-import Image from "next/image";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import { DotFilledIcon } from "@radix-ui/react-icons";
-import { Button } from "./button";
-import Link from "next/link";
-import { useState } from "react";
+import { projects } from "@/constants"
+import Image from "next/image"
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
+import { DotFilledIcon } from "@radix-ui/react-icons"
+import { Button } from "./button"
+import Link from "next/link"
+import { useState } from "react"
 
 const PortfolioCard = () => {
-  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const [currentSlide, setCurrentSlide] = useState<number>(0)
 
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
@@ -33,9 +33,9 @@ const PortfolioCard = () => {
       },
     },
     slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
+      setCurrentSlide(slider.track.details.rel)
     },
-  });
+  })
   return (
     <div ref={sliderRef} className="keen-slider pt-5 pb-10">
       {projects.map((item) => (
@@ -111,6 +111,23 @@ const PortfolioCard = () => {
                     Repo
                   </Button>
                 </Link>
+                {item.figmaLink && (
+                  <Link href={item.figmaLink} target="_blank">
+                    <Button
+                      variant="outline"
+                      className="flex py-2 px-3 gap-2 text-xs font-normal"
+                    >
+                      <Image
+                        src="icons/figma.svg"
+                        alt="vercel"
+                        width={16}
+                        height={16}
+                        className="size-4"
+                      />
+                      Figma
+                    </Button>
+                  </Link>
+                )}
               </div>
               <div className="flex items-center gap-2 mr-3 max-lg:mb-1">
                 {item.techStack.map((icon) => (
@@ -141,7 +158,7 @@ const PortfolioCard = () => {
                 : "text-muted-foreground"
             }`}
             onClick={() => {
-              instanceRef.current?.moveToIdx(index);
+              instanceRef.current?.moveToIdx(index)
             }}
           >
             <DotFilledIcon width={25} height={25} />
@@ -149,7 +166,7 @@ const PortfolioCard = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PortfolioCard;
+export default PortfolioCard
