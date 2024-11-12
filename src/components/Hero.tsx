@@ -15,7 +15,7 @@ const Hero = () => {
     { text: "Jan" },
     { text: "Leven," },
     { text: "a" },
-    { text: "front-end" },
+    { text: "React |" },
     { text: "Next.js" },
     { text: "Developer" },
   ]
