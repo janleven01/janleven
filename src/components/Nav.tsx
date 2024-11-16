@@ -71,7 +71,7 @@ const Nav = () => {
                   </Link>
                 ))}
                 <Link
-                  href="https://drive.google.com/file/d/1s9xPzsH87oz5UtR5INZWdhhSgnp8jrsF/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1m7P5ZxgU-FnDfjFFhl3ikf2tbJbjHZoQ/view?usp=sharing"
                   target="_blank"
                 >
                   <DropdownMenuItem>
