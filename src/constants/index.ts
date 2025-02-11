@@ -84,9 +84,31 @@ export const techStack = [
     name: "Appwrite",
     image: "/icons/appwrite.svg",
   },
+  {
+    id: 11,
+    name: "Supabase",
+    image: "/icons/supabase.svg",
+  },
 ]
 
 export const projects = [
+  {
+    title: "Tri-GL Trading",
+    description:
+      "An industrial product platform that lets users browse products, add to a request list, and send quotations, with an admin panel for inventory management—boosting credibility and online presence.",
+    websiteLive: "https://www.trigltrading.com/",
+    imgURL: "/trigltrading.png",
+    techStack: [
+      { name: "NextJs", iconURL: "/icons/nextjs.svg", className: "size-8" },
+      {
+        name: "Typescript",
+        iconURL: "/icons/typescript.svg",
+        className: "size-5",
+      },
+      { name: "Tailwind", iconURL: "/icons/tailwind.svg", className: "size-5" },
+      { name: "Supabase", iconURL: "/icons/supabase.svg", className: "size-5" },
+    ],
+  },
   {
     title: "Medix",
     description:
@@ -235,6 +257,28 @@ export const projects = [
 ]
 
 export const content = [
+  {
+    title: "Full Stack Developer",
+    companyName: "Tri-GL Industrial Trading",
+    jobDuration: "Oct 2024 - Present",
+    descriptions: [
+      {
+        title: "Full-Stack Web Application Development:",
+        description:
+          "Developed a full-stack web application from scratch to showcase industrial products and enhance remote customer engagement.",
+      },
+      {
+        title: "Product Listing and Quotation System:",
+        description:
+          "Implemented a seamless product listing system, allowing users to add items to a list and request quotes efficiently.",
+      },
+      {
+        title: "Admin Dashboard for Inventory Management:",
+        description:
+          "Created an intuitive admin dashboard to streamline inventory management and facilitate product updates.",
+      },
+    ],
+  },
   {
     title: "Product Researcher and Developer",
     companyName: "Reyari, Ltd. - UK",

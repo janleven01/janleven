@@ -102,7 +102,7 @@ export const StickyScroll = ({
           opacity: 0,
         }}
         animate={{
-          opacity: activeCard === 1 ? 1 : 0.3,
+          opacity: activeCard === 2 ? 1 : 0.3,
         }}
       >
         <h2 className="text-4xl font-medium">Education</h2>

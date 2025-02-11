@@ -96,21 +96,40 @@ const PortfolioCard = () => {
                     </Button>
                   </Link>
                 )}
-                <Link href={item.githubLink} target="_blank">
-                  <Button
-                    variant="outline"
-                    className="flex py-2 px-3 gap-2 text-sm font-thin italic"
-                  >
-                    <Image
-                      src="icons/github.svg"
-                      alt="github"
-                      width={16}
-                      height={16}
-                      className="size-4"
-                    />
-                    Repo
-                  </Button>
-                </Link>
+                {item.githubLink && (
+                  <Link href={item.githubLink} target="_blank">
+                    <Button
+                      variant="outline"
+                      className="flex py-2 px-3 gap-2 text-sm font-thin italic"
+                    >
+                      <Image
+                        src="icons/github.svg"
+                        alt="github"
+                        width={16}
+                        height={16}
+                        className="size-4"
+                      />
+                      Repo
+                    </Button>
+                  </Link>
+                )}
+                {item.websiteLive && (
+                  <Link href={item.websiteLive} target="_blank">
+                    <Button
+                      variant="outline"
+                      className="flex py-2 px-3  text-xs font-normal"
+                    >
+                      <Image
+                        src="icons/web.svg"
+                        alt="Website Live"
+                        width={24}
+                        height={24}
+                        className="size-6"
+                      />
+                      Website Live
+                    </Button>
+                  </Link>
+                )}
                 {item.figmaLink && (
                   <Link href={item.figmaLink} target="_blank">
                     <Button
