@@ -14,9 +14,12 @@ const Hero = () => {
     { text: "I'm" },
     { text: "Jan" },
     { text: "Leven," },
-    { text: "a" },
-    { text: "React |" },
-    { text: "Next.js" },
+    { text: "an" },
+    { text: "Amazon" },
+    { text: "Product" },
+    { text: "Researcher" },
+    { text: "&" },
+    { text: "Web" },
     { text: "Developer" },
   ]
 

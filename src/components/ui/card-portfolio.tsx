@@ -87,12 +87,29 @@ const PortfolioCard = () => {
                     >
                       <Image
                         src="icons/youtube.svg"
-                        alt="vercel"
+                        alt="youtube"
                         width={16}
                         height={16}
                         className="size-4"
                       />
                       Youtube
+                    </Button>
+                  </Link>
+                )}
+                {item.gdriveLink && (
+                  <Link href={item.gdriveLink} target="_blank">
+                    <Button
+                      variant="outline"
+                      className="flex py-2 px-3 gap-2 text-xs font-normal"
+                    >
+                      <Image
+                        src="icons/gdrive.svg"
+                        alt="gdrive"
+                        width={16}
+                        height={16}
+                        className="size-4"
+                      />
+                      Google Drive
                     </Button>
                   </Link>
                 )}

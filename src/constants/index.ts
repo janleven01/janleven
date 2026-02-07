@@ -24,11 +24,11 @@ export const contacts = [
     iconURL: "/icons/github.svg",
     link: "https://github.com/janleven01",
   },
-  // {
-  //   label: "LinkedIn",
-  //   iconURL: "/icons/linkedin.svg",
-  //   link: "https://www.linkedin.com/in/janleven01",
-  // },
+  {
+    label: "LinkedIn",
+    iconURL: "/icons/linkedin.svg",
+    link: "https://www.linkedin.com/in/janleven01",
+  },
 ]
 
 export const techStack = [
@@ -71,23 +71,23 @@ export const techStack = [
   },
   {
     id: 8,
-    name: "NextAuth",
-    image: "/icons/nextauth.svg",
-  },
-  {
-    id: 9,
     name: "Mongodb",
     image: "/icons/mongodb.svg",
   },
   {
+    id: 9,
+    name: "Sheets",
+    image: "/icons/sheets.svg",
+  },
+  {
     id: 10,
-    name: "Appwrite",
-    image: "/icons/appwrite.svg",
+    name: "Helium10",
+    image: "/icons/helium10.png",
   },
   {
     id: 11,
-    name: "Supabase",
-    image: "/icons/supabase.svg",
+    name: "DataDive",
+    image: "/icons/datadive.png",
   },
 ]
 
@@ -107,6 +107,19 @@ export const projects = [
       },
       { name: "Tailwind", iconURL: "/icons/tailwind.svg", className: "size-5" },
       { name: "Supabase", iconURL: "/icons/supabase.svg", className: "size-5" },
+    ],
+  },
+  {
+    title: "Amazon Product Pipeline & Validation",
+    description:
+      "A comprehensive product validation system using Helium 10 data. Includes opportunity scoring, competitor gap analysis, and profit margin forecasting.",
+    gdriveLink:
+      "https://drive.google.com/drive/folders/1Qi3_sHasQoYwhUoqulVq-SNno3V8Rfi9?usp=drive_link",
+    imgURL: "/amazon.png",
+    techStack: [
+      { name: "Sheets", iconURL: "/icons/sheets.svg", className: "size-8" },
+      { name: "Helium10", iconURL: "/icons/helium10.png", className: "size-8" },
+      { name: "DataDive", iconURL: "/icons/datadive.png", className: "size-8" },
     ],
   },
   {
@@ -280,34 +293,23 @@ export const content = [
     ],
   },
   {
-    title: "Product Researcher and Developer",
-    companyName: "Reyari, Ltd. - UK",
-    jobDuration: "May 2023 - Jun 2024",
+    title: "Freelance Amazon Product Researcher",
+    jobDuration: "July 2021 - Present",
     descriptions: [
       {
-        title: "Market Analysis and Trend Identification:",
+        title: "High-Volume Idea Generation:",
         description:
-          "Conducted in-depth market analysis and consumer behavior studies to identify trends and opportunities for Amazon FBA products.",
+          "Consistent pipeline management for US/UK Private Label brands.",
       },
       {
-        title: "Cross-Functional Collaboration:",
+        title: "Data Validation:",
         description:
-          "Collaborated with product designers and manufacturing representatives to ensure product alignment with customer needs.",
+          "Utilized Titan Network & Helium 10 Freedom Ticket 2.0 methodologies to validate 10-20 product ideas into the pipeline daily.",
       },
       {
-        title: "Performance Evaluation and Insights:",
+        title: "Clients:",
         description:
-          "Utilized analytics tools to assess product performance and consumer feedback, translating data insights into actionable recommendations for product improvements.",
-      },
-      {
-        title: "Product Launch Management:",
-        description:
-          "Managed product launch timelines and deliverables, including inventory investment, target pricing, and margin forecasts, for comprehensive revenue and cost analysis for informed decision-making.",
-      },
-      {
-        title: "Usability Testing and Design Refinement:",
-        description:
-          "Facilitated usability testing with target users to refine product designs and enhance the user experience.",
+          "Worked with brands like Rymora and various private label and wholesale sellers.",
       },
     ],
   },
